@@ -1,10 +1,42 @@
 # MCP opinnäytetyön vaiheet
 
-Tässä tehtävässä toteutin opettajan antaman pohjan avulla MCP-serverin, joka hakee tietoja MariaDB-tietokannasta.
+Tämä projekti on tehty Web-ohjelmointi 2 -kurssilla. Käytin tehtävässä opettajan antamaa valmista pohjaa ja koodiesimerkkejä.
 
-Serverissä on kaksi työkalua. Ensimmäisellä voi hakea kaikki opinnäytetyön vaiheet ja toisella valitun vaiheen selityksen.
+Tein MCP-serverin, joka hakee tietoja MariaDB-tietokannasta. Serverissä on kaksi työkalua. Ensimmäisellä voi hakea kaikki opinnäytetyön vaiheet ja toisella valitun vaiheen selityksen.
 
-Testasin serverin toimintaa Claude Desktopilla.
+Testasin molempien työkalujen toimintaa Claude Desktopilla.
+
+## Käytetyt teknologiat
+
+-	TypeScript
+-	Node.js
+-	Express.js
+-	MariaDB
+-	Model Context Protocol (MCP)
+-	Claude Desktop (testaus)
+
+## Käynnistäminen
+
+Asenna ensin projektin riippuvuudet:
+
+npm install
+
+Luo tietokanta database.sql-tiedoston avulla esimerkiksi HeidiSQLä.
+
+Luo projektin pääkansioon .env-tiedosto ja lisää siihen omat tietokantayhteyden asetukset:
+
+DB_HOST=localhost
+DB_USER=oma_kayttaja
+DB_PASSWORD=oma_salasana
+DB_NAME=opinnaytetyot
+
+Käynnistä serveri komennolla:
+
+npm run dev
+
+Serveri käynnistyy porttiin 3000.
+
+Claude Desktopilla testaamista varten MCP-yhteys pitää vielä määrittää erikseen.
 
 ## Testaus
 
