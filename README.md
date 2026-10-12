@@ -23,13 +23,14 @@ npm install
 
 Luo tietokanta database.sql-tiedoston avulla esimerkiksi HeidiSQLä.
 
-Luo projektin pääkansioon .env-tiedosto ja lisää siihen omat tietokantayhteyden asetukset:
+Luo projektin pääkansioon `.env`-tiedosto ja lisää siihen omat tietokantayhteyden asetukset:
 
+```env
 DB_HOST=localhost
 DB_USER=oma_kayttaja
 DB_PASSWORD=oma_salasana
 DB_NAME=opinnaytetyot
-
+```
 Käynnistä serveri komennolla:
 
 npm run dev
