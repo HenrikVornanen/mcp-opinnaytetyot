@@ -119,7 +119,7 @@ app.post("/", async (req, res) => {
   }
 });
 
-//Testataan et servu pyörii tulostuksella
+//Varmistus teksti konsoliin et servu pyörii
 app.listen(3000, () => {
   console.log("MCP-serveri käynnissä portissa 3000");
 });
